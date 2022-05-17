@@ -1,0 +1,13 @@
+<div>
+  <h1>Productos:</h1>
+  <% productos.forEach(producto => { %>
+    <div class="ps-product">
+      <img src="images/<%= producto.imagen %>" alt="<%= producto.nombre %>" />
+      <h3><%= producto.nombre %></h3>
+      <p><%= producto.descripcion %></p>
+      <p>
+        <span class="ps-tag ps-light-grey">U$S</span>
+        <%= producto.precio %>
+      </p>
+       <% }) %>     
+</div>
